@@ -1,0 +1,428 @@
+@font-face {
+  font-family: "Basier";
+  src: url("Fonts/BasierSquare-Regular.otf") format("woff2"),
+    url("Fonts/BasierSquare-Regular.otf") format("opentype"),
+      url("Fonts/BasierCircle-Regular.otf") format("woff2"),
+      url("Fonts/BasierCircle-Regular.otf") format("opentype");
+}
+
+body {
+  font-family: "Basier", "sans-serif";
+}
+
+.my-container{
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  padding: 0em 8em 0em 5em;
+  white-space: nowrap;
+}
+
+.nav-item {
+  padding: 0px 0.7em 0px 0.7em;
+  font-weight: normal;
+}
+
+.navbar-nav>.nav-item:nth-child(7) {
+  background-color: #282828;
+  padding: 0px 1em 0px 1em;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.navbar-nav > .nav-item:nth-child(7) a {
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: rgb(239, 239, 239);
+  transition: 0.7s;
+  border-radius: 7px;
+}
+
+.my-avada-btn {
+  white-space: nowrap;
+  font-size: 1rem;
+  padding: 0.8em 1.5em 0.8em 1.5em;
+  border-radius: 5px;
+}
+
+.my-avada-btn i {
+  font-size: 0.9rem;
+}
+
+.nav-item span {
+  font-size: 0.6rem;
+  margin-left: 0.4em;
+  padding: 0.3em 0.9em 0.3em 0.9em;
+  background-color: #fe346e;
+  border-radius: 5px;
+}
+
+.fa-chevron-down {
+  margin-left: 0.7em;
+  font-size: 0.7rem;
+}
+
+.ultimate-builder {
+  margin-top: 4em;
+}
+
+.ultimate-builder h1 {
+  font-size: clamp(1rem, 9vw, 3.9rem);
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+
+.trusted-by-p {
+  font-size: 1.1rem;
+  color: #696969;
+  font-weight: 100;
+}
+
+.start-building {
+  margin-top: 2em;
+}
+
+.start-building h5 {
+  font-weight: 500;
+}
+
+.start-building button {
+  background-color: rgb(39, 39, 39);
+  padding: 1em 2em 1em 2em;
+}
+
+.start-building button:hover {
+  background-color: black;
+  padding: 1em 2em 1em 2em;
+}
+
+.main-div-1-hr{
+  height: 0.5vh; /* Thin line */
+  border: none;
+  width: 80%;
+  margin-top: 3em;
+  background: 
+    radial-gradient(circle, rgba(0, 0, 0, 0.7) 10%, transparent 50%) 0 0 / 5px 5px,
+    radial-gradient(circle, rgba(0, 0, 0, 0.3) 10%, transparent 50%) 2px 2px / 5px 5px;
+  background-color: transparent;
+}
+
+.sec-1-count{
+    margin-top: 1.2em;
+    font-size: clamp(1rem, 4vw, 1.8rem);
+    font-weight: 900;
+}
+
+.sec-1-count small{
+    font-size: 0.85rem;
+    color: rgb(103, 103, 103);
+    font-weight: 100;
+    display: block
+}
+
+/* Media Query Mobile */
+
+@media only screen and (min-width: 200px) and (max-width: 450px) {
+
+  .my-container{
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+  }
+
+  .main{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .navbar-nav {
+    display: block;
+    padding: 0px;
+  }
+
+  .navbar img {
+    height: 5vh;
+    width: 22vh;
+    margin-left: 1em;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-top: 1.6em;
+  }
+
+  .nav-link.active {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-style: normal;
+    justify-content: space-between;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) {
+    background-color: transparent;
+    color: black;
+    display: block;
+    font-size: 1.1rem;
+    padding-left: 0.5em;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) a {
+    color: black;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) span {
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  .my-avada-btn {
+    display: none;
+  }
+
+  .fa-chevron-down {
+    font-size: 0.8rem;
+  }
+
+  .ultimate-builder{
+    margin-top: 2.3em;
+  }
+
+  .ultimate-builder h1{
+    display: inline-block;
+    font-size: 2.8rem;
+  }
+
+  br{
+    display: none;
+  }
+
+  .main-div-1-hr{
+    margin-top: 5vh;
+    width: 100%;
+  }
+
+  .trusted-by-p p{
+    line-height: 3.5vh;
+    margin-top: 0vh;
+  }
+
+  .trusted-by-p{
+    margin-top: 0.5vh;
+  }
+
+  .sec-1-count{
+    margin-top: 1em;
+  }
+
+  .sec-1-count b{
+    font-size: 3vh;
+  }
+
+  .sec-1-count small{
+    margin-top: 1em;
+  }
+}
+
+/* Media Query Mobile 2*/
+
+@media only screen and (min-width: 451px) and (max-width: 640px) {
+  .navbar-nav {
+    display: block;
+    padding: 0px;
+  }
+
+  .navbar img {
+    height: 35px;
+    width: 160px;
+    margin-left: 1em;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-top: 1.6em;
+  }
+
+  .nav-link.active {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-style: normal;
+    justify-content: space-between;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) {
+    background-color: transparent;
+    color: black;
+    display: block;
+    font-size: 1.1rem;
+    padding-left: 0.5em;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) a {
+    color: black;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) span {
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  .main1-text, .main1-image{
+    width: 100%;
+  }
+
+  .my-avada-btn {
+    display: none;
+  }
+
+  .fa-chevron-down {
+    font-size: 0.8rem;
+  }
+}
+
+/* Media Query Tab */
+
+@media only screen and (min-width: 641px) and (max-width: 1030px) {
+
+  .navbar-nav {
+    display: block;
+    padding: 0px;
+  }
+
+  .main{
+    padding-left: 0.5vh;
+    padding-right: 1vh;
+  }
+
+  .navbar {
+    padding: 0em;
+  }
+
+  .navbar img {
+    height: 35px;
+    width: 160px;
+    margin-left: 1em;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-top: 1.6em;
+  }
+
+  .nav-link.active {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-style: normal;
+    justify-content: space-between;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) {
+    background-color: transparent;
+    color: black;
+    display: block;
+    font-size: 1.1rem;
+    padding-left: 0.5em;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) a {
+    color: black;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) span {
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  .main1-image{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .main1-text{
+    padding-top: 0em !important;
+    margin-top: 0em !important;
+  }
+
+  .my-avada-btn {
+    display: none;
+  }
+
+  .trusted-by-p{
+    width: 40vh;
+  }
+
+  .trusted-by-p br{
+    display: none;
+  }
+
+  .ultimate-builder{
+    margin-top: 3em;
+  }
+
+  .ultimate-builder h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+  }
+
+  .trusted-by-p{
+    margin-top: 3vh;
+    line-height: 5vh;
+  }
+
+  .sec-1-count div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sec-1-count div:nth-child(2) small{
+    width: 100%;
+  }
+
+  .fa-chevron-down {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,1394 @@
+@font-face {
+  font-family: "Basier";
+  src: url("Fonts/BasierSquare-Regular.otf") format("woff2"),
+    url("Fonts/BasierSquare-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BasierBold";
+  src: url("Fonts/Basier_Square_Bold.otf") format("woff2"),
+  url("Fonts/Basier_Square_Bold.otf") format("opentype")
+}
+
+body {
+  font-family: "Basier", "sans-serif";
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  padding: 0em 8em 0em 5em;
+  white-space: nowrap;
+}
+
+.nav-item {
+  padding: 0px 0.7em 0px 0.7em;
+  font-weight: normal;
+}
+
+.navbar-nav > .nav-item:nth-child(6) {
+  background-color: #282828;
+  padding: 0px 1em 0px 1em;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.navbar-nav > .nav-item:nth-child(6) a {
+  color: white;
+}
+
+.nav-item:hover {
+  background-color: rgb(239, 239, 239);
+  transition: 0.7s;
+  border-radius: 7px;
+}
+
+.my-avada-btn {
+  white-space: nowrap;
+  font-size: 1rem;
+  padding: 0.8em 1.5em 0.8em 1.5em;
+  border-radius: 5px;
+}
+
+.my-avada-btn i {
+  font-size: 0.9rem;
+}
+
+.nav-item span {
+  font-size: 0.6rem;
+  margin-left: 0.4em;
+  padding: 0.3em 0.9em 0.3em 0.9em;
+  background-color: #fe346e;
+  border-radius: 5px;
+}
+
+.fa-chevron-down {
+  margin-left: 0.7em;
+  font-size: 0.7rem;
+}
+
+.ultimate-builder {
+  margin-top: 4em;
+}
+
+.ultimate-builder h1 {
+  font-size: clamp(2.9rem, 9vw, 3.9rem);
+  font-weight: 900;
+  font-family: 'BasierBold';
+  margin-bottom: 0px;
+}
+
+.trusted-by-p {
+  font-size: 1.1rem;
+  color: #696969;
+  font-weight: 100;
+}
+
+.start-building {
+  margin-top: 2em;
+}
+
+.start-building h5 {
+  font-weight: 500;
+}
+
+.start-building button {
+  background-color: rgb(39, 39, 39);
+  padding: 1em 2em 1em 2em;
+}
+
+.start-building button:hover {
+  background-color: black;
+  padding: 1em 2em 1em 2em;
+}
+
+.main-div-1-hr {
+  height: 0.5vh; /* Thin line */
+  border: none;
+  width: 80%;
+  margin-top: 3em;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.7) 10%, transparent 50%) 0
+      0 / 5px 5px,
+    radial-gradient(circle, rgba(0, 0, 0, 0.3) 10%, transparent 50%) 2px 2px /
+      5px 5px;
+  background-color: transparent;
+}
+
+.sec-1-count{
+  margin-top: 2em;
+}
+
+.sec-1-count b {
+  font-size: clamp(1.8rem, 6vw, 1.8rem);
+  font-weight: 900;
+}
+
+.sec-1-count small {
+  font-size: 0.85rem;
+  color: rgb(103, 103, 103);
+  font-weight: 100;
+  display: block;
+}
+
+.prebuilt{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.4em 0.7em;
+  height: auto;
+  border-radius: 5px;
+  padding-top: 0.5em;
+  box-shadow: 0px 0px 20px 2px silver;
+}
+
+.side-menus{
+  position: fixed;
+  right: 1%;
+  top: 20%;
+}
+
+.side-menus a{
+  color: #4A5259;
+}
+
+.prebuilt img{
+  height: auto;
+  width: 1.8vw;
+}
+
+.prebuilt small{
+  font-size: 0.7rem;
+}
+
+.prebuilt h3{
+  color: #198FD9;
+  font-weight: 900;
+  font-size: clamp(1.7rem, 8vh, 0.8rem);
+}
+
+.msg{
+  font-size: 1.9rem;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  padding: 0.4em 0.6em;
+  padding-bottom: 0.2em;
+  border-radius: 150px;
+  color: white;
+  background-color: #67B97D;
+  z-index: 999;
+}
+
+.to-top{
+  padding: 0.7em 0.9em;
+  border-radius: 5px;
+  background-color: rgb(63, 62, 62);
+  color: white;
+  position: fixed;
+  left: 5%;
+  bottom: 3%;
+  display: none;
+}
+
+.cards{
+  margin-top: 7em;
+}
+
+.section2-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFE979;
+  padding: 2.8em;
+  color: black;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cards div:nth-child(1) .section2-card:hover{
+  background-color: #FFF07D;
+  transform: scale(1.02) translateY(-10px);
+}
+
+.cards div:nth-child(2) .section2-card:hover{
+  background-color: #C0FFA0;
+  transform: scale(1.02) translateY(-10px);
+}
+
+.cards div:nth-child(3) .section2-card:hover{
+  background-color: #83DAF7;
+  transform: scale(1.02) translateY(-10px);
+}
+
+.cards div:nth-child(2) .section2-card{
+  background-color: #b7f598;
+}
+
+.cards div:nth-child(3) .section2-card{
+  background-color: #7ED5F0;
+}
+
+.section2-card h2{
+  font-size: clamp(1rem, 4vh, 1.8rem);
+  font-weight: 900;
+  text-align: center;
+}
+
+.section2-card h6{
+  font-size: clamp(1rem, 2.5vh, 1rem);
+  text-wrap: nowrap;
+  font-weight: 900;
+}
+
+.section2-card img{
+  height: 28vh;
+  width: auto;
+  margin-top: 1.5em;
+}
+
+.card1-buttons{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0.5em;
+}
+
+.card2-buttons, .card3-buttons{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0.5em;
+}
+
+.section2-card .btn{
+  background-color: #E7C100;
+  color: white;
+  padding: 0.7em 1em;
+  font-size: 0.7rem; 
+  font-weight: bold;
+}
+
+.card2-buttons .btn{
+  background-color: #6AC33E;
+}
+
+.card3-buttons .btn{
+  background-color: #1698C0;
+}
+
+.card1-buttons .btn:nth-child(1){
+  grid-column: span 2;
+}
+
+.card1-buttons .btn:nth-child(4){
+  grid-column: span 2;
+}
+
+.card2-buttons .btn:nth-child(3){
+  grid-column: span 2;
+}
+
+.card2-buttons .btn:nth-child(4){
+  grid-column: 2;
+}
+
+.card3-buttons .btn:nth-child(3){
+  grid-column: span 2;
+}
+
+.card3-buttons .btn:nth-child(4){
+  grid-column: 2;
+}
+
+.section3-header{
+  margin-top: 10em;
+}
+
+.section3-header img{
+  height: 9vh;
+  width: auto;
+}
+
+.section3-title{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.builders{
+  margin-top: 4em;
+}
+
+.section3-title h1{
+  font-size: 2.8rem;
+  font-weight: lighter;
+}
+
+.section3-title h6{
+  font-size: 1.1rem;
+  color: #575757;
+}
+
+.menus{
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7em 1.2em;
+  width: 100%;
+  text-align: left;
+  margin-top: 0.6em;
+  border: 0;                
+}
+
+.menus:hover{
+  background-color: #F6F6F6;
+}
+
+.section4-title{
+  margin-top: 10em;
+}
+
+.section4-title h1{
+  font-size: 2.9rem;
+}
+
+.section4-title h6{
+  font-size: 1.1rem;
+}
+
+.section4-cards{
+  margin-top: 5em;
+}
+
+.section4-cards .card-text{
+  line-height: 3.6vh;
+}
+
+.section4-cards img{
+  height: 32vh;
+}
+
+.card-next-line{
+  margin-top: 4em;
+}
+
+.section5{
+  border-top: 1px solid rgb(218, 218, 218);
+  margin-top: 7em;
+  padding: 7.5em;
+}
+
+.section5-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section5-title h1{
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 0em 7em;
+}
+
+.section5-title h6{
+  color: #575757;
+  font-size: 1.1rem;
+}
+
+.section5-cards img{
+  margin-left: auto;
+  margin-right: auto;
+  height: 10vh;
+  width: auto;
+}
+
+.section5-cards{
+  margin-top: 5em;
+}
+
+.section5-cards .card-text{
+  color: #576462;
+}
+
+.testimonials{
+  height: 87vh;
+}
+
+.testimonials img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonials>div:nth-child(2){
+  background-color: #FFE979;
+}
+
+.testimonials>div:nth-child(2)>div{
+  padding: 6em;
+}
+
+.testimonials>div:nth-child(2) p{
+  font-size: 2rem;
+}
+
+.testimonials > div:nth-child(2) hr{
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.testimonials > div:nth-child(2) img{
+  height: 5vh;
+  width: auto;
+}
+
+
+/* Media Query Mobile */
+
+@media only screen and (min-width: 200px) and (max-width: 450px) {
+  .container {
+    width: 100%; /* Ensure full width usage */
+    padding: 0 auto; /* Add some padding for better spacing */
+    margin: 0 auto; /* Center it if necessary */
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    display: block;
+    padding: 0px;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 5vh;
+    z-index: 999;
+    width: 95%;
+    background-color: white;
+    box-sizing: border-box;
+  }
+
+  .navbar img {
+    height: auto;
+    max-width: 140px; /* Adjust width to fit the small screen */
+    width: auto;
+    margin-left: 1em;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-top: 1.6em;
+  }
+
+  .main1-image {
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+  }
+
+  .nav-link.active {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-style: normal;
+    justify-content: space-between;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) {
+    background-color: transparent;
+    color: black;
+    display: block;
+    font-size: 1.1rem;
+    padding-left: 0.5em;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) a {
+    color: black;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) span {
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  .my-avada-btn {
+    display: none;
+  }
+
+  .fa-chevron-down {
+    font-size: 0.8rem;
+  }
+
+  .ultimate-builder {
+    margin-top: 2.3em;
+  }
+
+  .trusted-by-p {
+    line-height: 3.8vh;
+    width: 95%;
+  }
+
+  br {
+    display: none;
+  }
+
+  .main-div-1-hr {
+    margin-top: 6vh;
+    width: 100%;
+  }
+
+  .sec-1-count {
+    margin-top: 2em;
+  }
+
+  .sec-1-count small {
+    margin-top: 1em;
+  }
+
+  .side-menus{
+    display: none;
+  }
+
+  .to-top{
+    display: none !important;
+  }
+
+  .cards{
+    margin-top: 0em;
+  }
+
+  .section2-card{
+    margin: 5em 0em 0em 0.5em;
+    padding: 1.9em;
+  }
+
+  .section2-card h2{
+    width: 100%;
+  }
+
+  .cards div:nth-child(2) .section2-card, .cards div:nth-child(3) .section2-card{
+    margin-top: 2em;
+  }
+  
+  .section2-card img{
+    height: 23vh;
+    width: auto;
+  }
+
+  .card1-buttons{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card2-buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+  }
+
+  .card3-buttons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .card2-buttons .btn:nth-child(3), .card2-buttons .btn:nth-child(4){
+    grid-column: span 2;
+  }
+
+  .card3-buttons .btn:nth-child(1){
+    grid-column: span 2;
+  }
+  
+  .card3-buttons .btn:nth-child(4){
+    grid-column: span 2;
+  }
+
+  .section3-header{
+    margin-top: 5em;
+  }
+
+  .section3-header img{
+    height: 7vh;
+    width: auto;
+    margin-bottom: 1.6em;
+  }
+
+  .section3-title h1{
+    font-size: 2.2rem;
+    width: 80%;
+  }
+
+  .section3-title h1{
+    width: 80%;
+  }
+
+  .section3-title h6{
+    width: 90%;
+    margin-top: 1em;
+    line-height: 3vh;
+  }
+
+  .builders{
+    margin-top: 2em;
+  }
+
+  .builders>div{
+    padding-left: 1.5em;
+  }
+
+  .menu-image{
+    margin-top: 0em;
+  }
+
+  .section4-title{
+    margin-top: 7em;
+  }
+
+  .section4-title h6{
+    margin-top: 1.5em;
+  }
+
+  .section4-title h1{
+    font-size: 2.3rem;
+  }
+
+  .section4-cards>div{
+    padding: 0em 1.5em;
+  }
+
+  .section4-cards{
+    margin-top: 0em;
+  }
+
+  .section4-cards img{
+    width: 100%;
+    height: auto;
+  }
+
+  .card-next-line{
+    margin-top: 0em;
+  }
+
+  .section4-cards .card{
+    margin-top: 4em;
+  }
+
+  .section5{
+    padding: 5em 0em;
+  }
+
+  .section5 h1{
+    font-size: 2.5em;
+    width: 100%;
+    padding: 0em 1.5em;
+  }
+
+  .section5 h6{
+    margin-top: 1em;
+    line-height: 4vh;
+    padding: 0em 2em;
+  }
+
+  .section5-cards{
+    margin-top: 0em;
+  }
+
+  .section5-cards .card{
+    padding-left: 1.2em;
+    margin-top: 4.2em;
+  }
+
+  .testimonials>div:nth-child(2)>div{
+    padding: 2.6em;
+  }
+
+  .testimonials p{
+    font-size: 1.6rem !important;
+  }
+
+  .testimonials hr{
+    margin: 3em 0em !important;
+  }
+
+  .testimonials>div:nth-child(2) img{
+    height: 4vh;
+  }
+  
+}
+
+/* Media Query Mobile 2*/
+
+@media only screen and (min-width: 449px) and (max-width: 640px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    display: block;
+    padding: 0px;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 11vh;
+    z-index: 999;
+    width: 95%;
+    background-color: white;
+    box-sizing: border-box;
+  }
+
+  .navbar img {
+    height: 35px;
+    width: 160px;
+    margin-left: 1em;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-top: 1.6em;
+  }
+
+  .nav-link.active {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-style: normal;
+    justify-content: space-between;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) {
+    background-color: transparent;
+    color: black;
+    display: block;
+    font-size: 1.1rem;
+    padding-left: 0.5em;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) a {
+    color: black;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) span {
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  .ultimate-builder{
+    margin-top: 2em;
+  }
+
+  .trusted-by-p br{
+    display: none;
+  }
+
+  .main1-text,
+  .main1-image {
+    width: 100%;
+  }
+
+  .my-avada-btn {
+    display: none;
+  }
+
+  .fa-chevron-down {
+    font-size: 0.8rem;
+  }
+
+  .to-top{
+    display: none !important;
+  }
+
+  .prebuilt{
+    display: none;
+  }
+
+  .cards>div{
+    padding-right: 0em;
+  }
+
+  .cards{
+    margin-top: 5em !important;
+  }
+
+  .section2-card{
+    padding: 2em;
+  }
+
+  .card1-buttons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .card1-buttons .btn:nth-child(4){
+    grid-column: 3 / 4;
+  }
+
+  .card2-buttons, .card3-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .card2-buttons .btn:nth-child(3), .card3-buttons .btn:nth-child(3){
+    grid-column: 3/3;
+  }
+
+  .card2-buttons .btn:nth-child(4), .card3-buttons .btn:nth-child(4){
+    grid-column: 4/4;
+  }
+
+  .cards div:nth-child(2) .section2-card, .cards div:nth-child(3) .section2-card{
+    margin-top: 2em;
+  }
+
+  .section3-header{
+    margin-top: 5.5em;
+  }
+
+  .section3-title h1{
+    font-size: 2.6rem;
+  }
+
+  .section3-title h6{
+    width: 80%;
+    margin-top: 1em;
+    line-height: 4vh;
+  }
+
+  .builders{
+    margin-top: 1em;
+  }
+
+  .builders .col-lg-9{
+    display: none !important;
+  }
+
+  .section4-title{
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section4-title h1{
+    font-size: 2.7rem;
+  }
+
+  .section4-title h6{
+    margin-top: 1em;
+    width: 90%;
+  }
+
+  .section4-cards img{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+
+  .section4-cards{
+    margin-top: 0em;
+  }
+
+  .section4-cards .card{
+    margin-top: 4em;
+  }
+
+  .card-next-line{
+    margin-top: 0em;
+  }
+
+  .section5{
+    padding: 6em 2em;
+  }
+
+  .section5-title h1{
+    padding: 0em;
+    font-size: 2.4rem;
+  }
+
+  .section5-title h6{
+    margin-top: 1em;
+  }
+
+  .section5-cards{
+    margin-top: 0em;
+  }
+
+  .section5-cards .card{
+    padding-left: 1em;
+    margin-top: 4.5em;
+  }
+
+  .testimonials>div:nth-child(2)>div{
+    padding: 2.5em;
+  }
+
+  .testimonials>div:nth-child(2) p{
+    font-size: 1.6rem;
+  }
+
+  .testimonials hr{
+    margin: 2.5em 0em !important;
+  }
+}
+
+/* Media Query Tab */
+
+@media only screen and (min-width: 641px) and (max-width: 990px) {
+  .container {
+    width: 100%; /* Ensure full width usage */
+    padding: 0 2rem; /* Add some padding for better spacing */
+    margin: 0 auto; /* Center it if necessary */
+    max-width: 100%;
+  }
+
+  .navbar-nav {
+    display: block;
+    padding: 0px;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 4vh;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+  }
+
+  .navbar-nav br {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0em;
+  }
+
+  .navbar img {
+    height: 35px;
+    width: 160px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding-right: 0em;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .nav-item {
+    width: 100%;
+    margin-top: 1.6em;
+  }
+
+  .nav-link.active {
+    display: flex;
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-style: normal;
+    justify-content: space-between;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) {
+    background-color: transparent;
+    color: black;
+    display: block;
+    font-size: 1.1rem;
+    padding-left: 0.5em;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) a {
+    color: black;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) span {
+    color: white;
+    font-size: 0.9rem;
+  }
+
+  .main1-image {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .main1-image img {
+    margin-top: 5em;
+  }
+
+  .main1-text {
+    padding-top: 0em !important;
+    padding-left: 0em;
+    margin-top: 0em !important;
+  }
+
+  .my-avada-btn {
+    display: none;
+  }
+
+  .ultimate-builder {
+    margin-top: 3em;
+  }
+
+  .main-div-1-hr {
+    width: 100%;
+  }
+
+  .ultimate-builder h1 {
+    font-weight: 900;
+  }
+
+  .trusted-by-p {
+    margin-top: 3vh;
+    line-height: 4vh;
+  }
+
+  .sec-1-count {
+    margin-top: 7vh;
+    text-align: center;
+  }
+
+  .sec-1-count div:nth-child(2) small {
+    width: 100%;
+  }
+
+  .side-menus{
+    right: 2%;
+  }
+
+  .prebuilt{
+    padding: 0.5em 0.5em;
+    z-index: 999 !important;
+  }
+
+  .prebuilt img{
+    height: 3vh;
+    width: auto;
+  }
+
+  .fa-chevron-down {
+    font-size: 0.8rem;
+  }
+
+  .to-top{
+    display: none !important;
+  }
+
+  .cards{
+    margin-top: 5em !important;
+  }
+
+  .section2-card{
+    padding: 1.8em;
+    height: 100%;
+  }
+
+  .section2-card img{
+    height: 14vh;
+    width: auto;
+  }
+
+  .card3-buttons{
+    margin-top: 1.2em !important;
+  }
+
+  .card1-buttons{
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .card2-buttons, .card3-buttons{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+  }
+
+  .card2-buttons .btn:nth-child(3), .card2-buttons .btn:nth-child(4){
+    grid-column: span 2;
+  }
+
+  .card3-buttons .btn:nth-child(1), .card3-buttons .btn:nth-child(4){
+    grid-column: span 2;
+  }
+
+  .card3-buttons .btn:nth-child(2), .card3-buttons .btn:nth-child(3){
+    grid-column: span 1;
+  }
+
+  .card1-buttons .btn{
+    grid-column: span 2;
+  }
+
+  .section3-header{
+    margin-top: 6em;
+  }
+
+  .section3-header img{
+    height: 5vh;
+    width: auto;
+  }
+
+  .section3-title h1{
+    font-size: 2.6rem;
+  }
+
+  .section3-title h6{
+    width: 80%;
+    margin-top: 0.5em;
+    line-height: 4vh;
+  }
+
+  .builders{
+    margin-top: 1em;
+  }
+
+  .builders .col-lg-9{
+    display: none !important;
+  }
+
+  .section4-title{
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section4-title h1{
+    font-size: 2.7rem;
+  }
+
+  .section4-title h6{
+    margin-top: 1em;
+    width: 90%;
+  }
+
+  .section4-cards img{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+
+  .section4-cards .card .card-text{
+    line-height: normal;
+  }
+
+  .section4-cards{
+    margin-top: 0em;
+  }
+
+  .section4-cards .card{
+    margin-top: 4em;
+    z-index: -1;
+  }
+
+  .card-next-line{
+    margin-top: 0em;
+  }
+
+  .section5{
+    padding: 6em 2em;
+  }
+
+  .section5 img{
+    height: 5vh;
+    width: auto;
+  }
+
+  .section5-title h1{
+    padding: 0em 1.5em;
+    font-size: 2.4rem;
+  }
+
+  .section5-title h6{
+    margin-top: 1em;
+  }
+
+  .section5-cards{
+    margin-top: 0em;
+  }
+
+  .section5-cards .card{
+    margin-top: 4.5em;
+    padding-left: 0.8em;
+    z-index: -1;
+  }
+
+  .testimonials>div:nth-child(2)>div{
+    padding: 4em;
+  }
+
+  .testimonials>div:nth-child(2) img{
+    height: 3vh;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 989px) and (max-width: 1290px) {
+  .container {
+    width: 100%; /* Ensure full width usage */
+    padding: 0 2rem; /* Add some padding for better spacing */
+    margin: 0 0em; /* Center it if necessary */
+    max-width: 100%;
+  }
+
+  .navbar-nav{
+    padding: 0em 4em;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) {
+    background-color: transparent;
+    background-color: black;
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) a {
+    font-size: 0.9rem;
+    color: white;
+  }
+
+  .navbar-nav > .nav-item:nth-child(6) span {
+    color: white;
+    font-size: 0.7rem;
+  }
+
+  .my-avada-btn{
+    margin-right: auto !important;
+  }
+
+  .sec-1-count{
+    margin-top: 2em;
+  }
+
+  .section2-card{
+    height: 100%;
+  }
+
+  .section2-card h2{
+    font-size: 1.2rem;
+  }
+
+  .prebuilt img{
+    height: 4vh;
+    width: auto;    
+  }
+
+  .sec-1-count div:nth-child(2){
+    margin-top: 1em;
+  }
+
+  .section2-card img{
+    height: 15vh;
+    width: auto;
+  }
+
+  .card1-buttons, .card2-buttons, .card3-buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-wrap: nowrap;
+  }
+
+  .card1-buttons .btn:nth-child(1){
+    grid-column: span 2;
+  }
+  
+  .card2-buttons .btn:nth-child(3), .card2-buttons .btn:nth-child(4), .card3-buttons .btn:nth-child(3), .card3-buttons .btn:nth-child(4){
+    grid-column: span 1;
+  }
+
+  .section3-header{
+    margin-top: 6em;
+  }
+
+  .section3-header img{
+    height: 5vh;
+    width: auto;
+  }
+
+  .menus{
+    font-size: 1rem;
+    text-wrap: nowrap;
+  }
+
+  .section4-cards .card{
+    z-index: -1;
+  }
+
+  .section4-cards .card img{
+    height: auto;
+  }
+
+  .section4-cards .card-text{
+    line-height: normal;
+  }
+
+  .section5{
+    padding: 6em 2em;
+  }
+
+  .section5 img{
+    height: 7vh;
+    width: auto;
+  }
+
+  .section5-title h1{
+    padding: 0em 1.5em;
+    font-size: 2.4rem;
+  }
+
+  .section5-title h6{
+    margin-top: 1em;
+  }
+
+  .section5-cards{
+    margin-top: 0em;
+    padding-left: 1em;
+  }
+
+  .section5-cards .card{
+    margin-top: 4.5em;
+    z-index: -1;
+  }
+
+  .testimonials>div{
+    width: 100% !important;
+  }
+
+  .testimonials>div:nth-child(2)>div{
+    padding: 4em;
+  }
+
+  .testimonials>div:nth-child(2)>div img{
+    height: 3vh;
+  }
+}
