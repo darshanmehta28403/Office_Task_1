@@ -67,7 +67,7 @@
             <!-- Main Section #1 -->
             <section>
                 <div class="row m-0">
-                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 main1-text ps-lg-0 ps-md-0">
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 main1-text ps-lg-0 ps-md-0 wow animate__animated animate__fadeInLeft">
                         <div class="ultimate-builder">
                             <h1 class="m-0">The Ultimate</h1>
                             <h1 class="m-0">Creative</h1>
@@ -472,7 +472,7 @@
                 <div class="footer-outer-div">
                     <div class="container footer-head">
                         <div class="row me-0">
-                            <div class="col-gl-6 col-md-6 col-sm-1 mt-lg-4">
+                            <div class="col-gl-6 col-md-12 col-sm-12 mt-lg-4">
                                 <div class="footer-head-text">
                                     <div>
                                         <h1 class="fw-bold">Build Successful Websites With Avada</h1>
@@ -487,7 +487,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-gl-6 col-md-6 col-sm-12 footer-head-img">
+                            <div class="col-gl-6 col-md-12 col-sm-12 footer-head-img">
                                 <img src="Images/footer-cta-600x369.webp" alt="">
                             </div>
                         </div>
@@ -498,10 +498,10 @@
                 <footer class="bg-black">
                     <div class="container">
                         <div class="row me-0 footer">
-                            <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="col-lg-3 col-md-4 col-sm-4">
                                 <img src="Images/avada-logo-light-svg.svg" alt="">
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="col-lg-3 col-md-4 col-sm-4">
                                 <ul type="none">
                                     <li class="mt-lg-2"><a href="#" class="text-white text-decoration-none">Help
                                             Center</a></li>
@@ -515,7 +515,7 @@
                                             Ticket</a></li>
                                 </ul>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="col-lg-3 col-md-4 col-sm-4">
                                 <ul type="none">
                                     <li class="mt-lg-2"><a href="#" class="text-white text-decoration-none">About Us</a>
                                     </li>
@@ -529,28 +529,27 @@
                                             Policy</a></li>
                                 </ul>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="col-lg-3 col-md-12 col-sm-12">
                                 <div>
                                     <p class="text-white">Sign up to our newsletter and get all of the latest news and
                                         updates.</p>
                                 </div>
                                 <div class="mt-lg-4">
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control p-2" placeholder="Your email*">
-                                        <span class="input-group-text text-white bg-dark"
-                                            id="basic-addon2">Subscribe</span>
-                                    </div>
+                                    <form class="input-group">
+                                        <input type="email" class="form-control p-2" placeholder="Your email*">
+                                        <input type="submit" class="input-group-text text-white bg-dark"
+                                            id="basic-addon2" />
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="container cpyright">
                         <div class="row me-0">
-                            <div class="col-lg-8 col-md-8 col-sm-12">
-                                <small class="text-white">© Copyright 2012 - 2024 | Avada Website Builder by ThemeFusion
-                                    | All rights reserved | Powered by WordPress</small>
+                            <div class="col-lg-8 col-md-12 col-sm-12">
+                                <small class="text-white">© Copyright 2012 - 2024 | Avada Website Builder by <a href="#" class="text-white">ThemeFusion</a> | All rights reserved | Powered by <a href="#" class="text-white">ThemeFusion</a></small>
                             </div>
-                            <div class="col-mg-4 col-md-4 col-sm-12 footer-links">
+                            <div class="col-mg-4 col-md-12 col-sm-12 footer-links">
                                 <button class="btn"><i class="fa-brands text-white fa-facebook-f"></i></button>
                                 <button class="btn ms-2"><i class="fa-brands text-white fa-x-twitter"></i></button>
                                 <button class="btn ms-2"><i class="fa-brands text-white fa-instagram"></i></button>
@@ -601,6 +600,10 @@
                 behavior: 'smooth'
             });
         });
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
