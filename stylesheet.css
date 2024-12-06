@@ -194,6 +194,10 @@ body {
   display: none;
 }
 
+.to-top:hover{
+  background-color: #67b97d;
+}
+
 .cards {
   margin-top: 7em;
 }
@@ -340,6 +344,10 @@ body {
   text-align: left;
   margin-top: 0.6em;
   border: 0;
+}
+
+.collapssible.active{
+  color: #67b97d;
 }
 
 .menus:hover {
