@@ -9,6 +9,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="icon" href="Images/title-logo.png">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link
@@ -67,7 +69,7 @@
             <!-- Main Section #1 -->
             <section>
                 <div class="row m-0">
-                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 main1-text ps-lg-0 ps-md-0 wow animate__animated animate__fadeInLeft">
+                    <div class="col-xl-5 col-lg-6 col-md-6 col-sm-6 main1-text ps-lg-0 ps-md-0 wow animate__animated animate__fadeIn">
                         <div class="ultimate-builder">
                             <h1 class="m-0">The Ultimate</h1>
                             <h1 class="m-0">Creative</h1>
@@ -97,7 +99,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6 main1-image pt-lg-5">
+                    <div class="col-xl-7 col-lg-6 col-md-6 col-sm-6 main1-image pt-lg-5 wow animate__animated animate__fadeIn">
                         <img src="Images/friday-sale.png" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -129,7 +131,7 @@
 
             <!-- Card Section #2 -->
             <section>
-                <div class="row me-0 cards">
+                <div class="row me-0 cards wow animate__animated animate__fadeIn">
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <a href="#" class="section2-card text-decoration-none">
                             <div>
@@ -191,7 +193,7 @@
             </section>
 
             <!-- Layout Demos - Section 3 -->
-            <section>
+            <section class="wow animate__animated animate__fadeIn">
                 <div class="d-flex justify-content-center section3-header">
                     <img src="Images/title-logo.png">
                 </div>
@@ -238,7 +240,7 @@
             </section>
 
             <!-- Section 4 - Cards -->
-            <section class="section4">
+            <section class="section4 wow animate__animated animate__fadeIn">
                 <div class="section4-title text-center">
                     <h1 class="fw-bold">All-In-One Website Builder</h1>
                     <h6 class="fw-normal text-secondary mt-lg-4">Experience total control over your website creation
@@ -326,7 +328,7 @@
         </div>
         <div>
             <!-- Section 5 - Customer Trust -->
-            <section class="section5">
+            <section class="section5 wow animate__animated animate__fadeIn">
                 <div class="section5-title text-center">
                     <h1>997,552 Website Owners Trust Avada</h1>
                     <h6 class="mt-lg-3">The #1 selling Website Builder on Themeforest for 11+ years.</h6>
@@ -378,7 +380,7 @@
             </section>
 
             <!-- Company Review (Squarebird) -->
-            <section>
+            <section class="wow animate__animated animate__fadeIn">
                 <div class="row me-0 testimonials">
                     <div class="col-lg-5 col-md-12 col-sm-12 p-0">
                         <img src="Images/testimonial.jpg" alt="">
@@ -403,7 +405,7 @@
             </section>
 
             <!-- FAQs -->
-            <section class="faqs">
+            <section class="faqs wow animate__animated animate__fadeIn">
                 <div class="faqs-title text-center">
                     <h1>Frequently Asked Questions</h1>
                 </div>
@@ -415,7 +417,20 @@
                         </div>
                         <div class="collapse mt-lg-3" id="collapseExample1">
                             <div>
-                                <p>With your purchase of Avada, you will receive:</p>
+                                <p class="h5">With your purchase of Avada, you will receive:</p>
+                                <div>
+                                    <ul class="p-0" type="none">
+                                        <li class="mt-2"><i class="fa-solid fa-check me-3 text-success"></i> 6 months of free professional support.</li>
+                                        <li class="mt-2"><i class="fa-solid fa-check me-3 text-success"></i>8 bundled premium plugins.</li>
+                                        <li class="mt-2"><i class="fa-solid fa-check me-3 text-success"></i>109 prebuilt websites, with new sites released regularly.</li>
+                                        <li class="mt-2"><i class="fa-solid fa-check me-3 text-success"></i>574 prebuilt content items for every occassion, downloadable with just a click.</li>
+                                        <li class="mt-2"><i class="fa-solid fa-check me-3 text-success"></i>120+ Design and Layout Elements.</li>
+                                        <li class="mt-2"><i class="fa-solid fa-check me-3 text-success"></i>550+ detailed help files, continually updated to ensure everything is current.</li>
+                                        <li class="mt-2"><i class="fa-solid fa-check me-3 text-success"></i>200+ video tutorials, with new videos, added regularly.</li>
+                                        <li class="mt-2"><i class="fa-solid fa-check me-3 text-success"></i>Free, consistent, and stable updates to ensure compatibility with industry standards & trends.</li>
+                                        <li class="mt-2"><i class="fa-solid fa-check me-3 text-success"></i>Avada works with popular 3rd party plugins like Yoast SEO, WooCommerce, The Events Calendar, HubSpot, WPML, and more.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -426,7 +441,7 @@
                         </div>
                         <div class="collapse mt-lg-3" id="collapseExample2">
                             <div>
-                                <p>With your purchase of Avada, you will receive:</p>
+                                <p class="h5">No, there are no recurring license fees to use Avada. It is a one-time purchase that provides you with lifetime updates at no extra cost and is valid for life. You can choose to purchase a support extension after the initial 6 months of support has expired. However, this is entirely optional.</p>
                             </div>
                         </div>
                     </div>
@@ -437,7 +452,21 @@
                         </div>
                         <div class="collapse mt-lg-3" id="collapseExample3">
                             <div>
-                                <p>With your purchase of Avada, you will receive:</p>
+                                <p class="h5 lh-sm">Hands-on support with our professional team of support experts is accessible 24/7, and that includes an extensive library of detailed <a href="#" class="text-dark">documentation</a> and <a href="#" class="text-dark">video tutorials</a>.</p>
+                                <div>
+                                    <ul class="p-0" type="none">
+                                        <li class="mt-4 h6"><i class="fa-solid fa-chevron-right text-success me-3"></i>To access support you will need to register a support account by following these steps.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-chevron-right text-success me-3"></i>Once your support account is set up, you can submit support tickets here.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-chevron-right text-success me-3"></i>Learn how to navigate your support account Dashboard here.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-chevron-right text-success me-3"></i>Check to see if you are eligible for Grandfathered support.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-chevron-right text-success me-3"></i>For a detailed overview of our support policy please go here.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -448,7 +477,10 @@
                         </div>
                         <div class="collapse mt-lg-3" id="collapseExample4">
                             <div>
-                                <p>With your purchase of Avada, you will receive:</p>
+                                <h5>Yes, each prebuilt website is 100% customizable. All prebuilt websites are professionally designed by our in-house design team, created to showcase Avada’s capabilities and save you time.
+                                </h5>
+                                <h5 class="mt-3">Once you import a prebuilt website, you can entirely customize the content and layouts to your liking. You can add your own imagery, change text, change colors or completely change any of the layouts using the Avada <a href="#" class="text-dark">Website Builder</a>.
+                                </h5>
                             </div>
                         </div>
                     </div>
@@ -459,7 +491,34 @@
                         </div>
                         <div class="collapse mt-lg-3" id="collapseExample5">
                             <div>
-                                <p>With your purchase of Avada, you will receive:</p>
+                                <p class="h5">Trust is a quality that we take great care to foster and maintain by building long-term professional relationships that our customers can rely on. Here are some important qualifiers:
+                                </p>
+                                <div>
+                                    <ul class="p-0" type="none">
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>The #1 selling Website Builder on Themeforest for 11+ years and counting.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>We love what we do and who we do it for. Your future is our focus.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>Avada is 100% developed and maintained in-house.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>Free, consistent, and stable updates to ensure compatibility with industry standards & trends.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>Avada has no dependence on 3rd parties to deliver a stable & seamless website building experience.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>550+ detailed help files, continually updated to ensure everything is current.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>200+ video tutorials, with new videos, added regularly.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>Avada works with popular 3rd party plugins like Yoast SEO, WooCommerce, The Events Calendar, HubSpot, WPML, and more.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>Years of evolving Avada by listening to our customer’s feedback is what helps shape Avada’s roadmap for the future.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>A vast, passionate community of Avada customers drives a well-established Facebook group and a community forum.
+                                        </li>
+                                        <li class="mt-4 h6"><i class="fa-solid fa-check me-3 text-success"></i>Join 997,702 passionate Avada customers and build your future.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -467,12 +526,12 @@
             </section>
 
             <!-- Footer -->
-            <section class="footer-container">
+            <section class="footer-container wow animate__animated animate__fadeIn">
                 <!-- Footer Head -->
                 <div class="footer-outer-div">
                     <div class="container footer-head">
                         <div class="row me-0">
-                            <div class="col-gl-6 col-md-12 col-sm-12 mt-lg-4">
+                            <div class="col-lg-6 col-md-12 col-sm-12 mt-lg-4">
                                 <div class="footer-head-text">
                                     <div>
                                         <h1 class="fw-bold">Build Successful Websites With Avada</h1>
@@ -487,7 +546,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-gl-6 col-md-12 col-sm-12 footer-head-img">
+                            <div class="col-lg-6 col-md-12 col-sm-12 footer-head-img">
                                 <img src="Images/footer-cta-600x369.webp" alt="">
                             </div>
                         </div>
@@ -601,7 +660,6 @@
             });
         });
     </script>
-    <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
